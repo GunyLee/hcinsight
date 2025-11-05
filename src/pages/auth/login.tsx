@@ -59,14 +59,14 @@ export default function LoginPage() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    backgroundColor: "#FFCA00",
+                    // backgroundColor: "#FFCA00",
                 }}
             >
                 <Box
                     sx={{
                         width: "100%",
                         maxWidth: "400px",
-                        p: 2,
+                        p: 3,
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
@@ -75,21 +75,21 @@ export default function LoginPage() {
                     <Typography
                         sx={{
                             textAlign: "center",
-                            fontSize: 16,
+                            fontSize: 20,
                             fontWeight: 700,
                             fontFamily: `'Kakao', 'Pretendard', sans-serif`,
                         }}
                     >
-                        매일 5분 살펴보는 데일리 동향
+                        헬스케어 인사이트 분석 플랫폼
                     </Typography>
                     <Typography
                         sx={{
                             textAlign: "center",
-                            fontSize: 40,
+                            fontSize: 44,
                             lineHeight: "48px",
                             fontWeight: 700,
                             fontFamily: `'Kakao', 'Pretendard', sans-serif`,
-                            mb: 3,
+                            mb: 4,
                             "& span": {
                                 fontWeight: 400,
                             },

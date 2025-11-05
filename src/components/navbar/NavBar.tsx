@@ -9,6 +9,7 @@ import { useState } from "react";
 import { PAGES } from "@/src/constants/pages";
 import Input from "../common/Input";
 import SearchIcon from "@mui/icons-material/Search";
+import User from "../common/User";
 
 export default function NavBar() {
     const router = useRouter();
@@ -152,10 +153,12 @@ export default function NavBar() {
                     </Box>
                     {/* 검색 끝 */}
                     {/* 웹 유저 시작 */}
+                    <User />
                     <ButtonBase
                         disableRipple
                         onClick={() => { router.push('/user') }}
                         sx={{
+                            display:'none',
                             position: 'relative',
                             borderRadius: 40,
                             width: 32,
