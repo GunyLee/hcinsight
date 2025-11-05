@@ -19,9 +19,12 @@ export default function HomePage() {
         <Box sx={{
             position: 'relative',
             px: 10,
-            py: 3,
+            pt: 6,
+            pb: 3,
             '@media (max-width: 768px)': {
                 px: 3,
+                pt: 0,
+                pb: 3,
             },
         }}>
             <Box sx={{

@@ -22,7 +22,7 @@ export default function AuthErrorPage() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: "#FFCA00",
+                // backgroundColor: "#FFCA00",
                 flexDirection: "column",
             }}
         >
@@ -39,7 +39,6 @@ export default function AuthErrorPage() {
                         fontSize: 36,
                         fontWeight: 700,
                         mb: 2,
-                        fontFamily: `'Kakao', 'Pretendard', sans-serif`,
                     }}
                 >
                     로그인 오류
@@ -49,13 +48,13 @@ export default function AuthErrorPage() {
                     sx={{
                         fontSize: 16,
                         mb: 4,
-                        fontFamily: `'Kakao', 'Pretendard', sans-serif`,
                     }}
                 >
                     {message}
                 </Typography>
 
                 <Button
+                    fullWidth
                     variant="contained"
                     onClick={() => router.push("/auth/login")}
                     sx={{

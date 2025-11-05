@@ -72,9 +72,13 @@ export default function User() {
             sx={{
                 '.MuiPaper-root': {
                     borderRadius: 1,
-                    '& .MuiList-root': {
-                        pt: 0,
-                        pb: 0,
+                    ' .MuiList-root': {
+                        pt: 1,
+                        pb: 1,
+                        ' .MuiMenuItem-root': {
+                            height: `32px !important`,
+                            minHeight: `32px !important`,
+                        }
                     }
                 }
             }}

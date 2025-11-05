@@ -25,7 +25,6 @@ export default function InAppGuard({ children }: { children: React.ReactNode }) 
                 height: "100vh",
                 px: 3,
                 textAlign: "center",
-                backgroundColor: "#FFCA00",
             }}
         >
             <Typography
@@ -33,7 +32,6 @@ export default function InAppGuard({ children }: { children: React.ReactNode }) 
                     fontSize: 20,
                     fontWeight: 700,
                     mb: 2,
-                    fontFamily: `'Pretendard', sans-serif`,
                 }}
             >
                 ⚠️ Google 로그인을 위해 <br /> Chrome 또는 Safari에서 열어주세요
@@ -43,6 +41,7 @@ export default function InAppGuard({ children }: { children: React.ReactNode }) 
             </Typography>
             {isAndroid && (
                 <Button
+                    fullWidth
                     variant="contained"
                     onClick={() =>
                     (window.location.href =
